@@ -1,0 +1,7 @@
+@import './base/_index.css';
+@import './globals/_index.css';
+
+/* components */
+@import './components/header';
+@import './components/home/hero';
+@import './components/footer';

@@ -2,15 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/image/logo.jpg" />
+    <title>Ск-сеть - Комиссионный магазин</title>
   </head>
   <body>
     <header class="header">
+      <h1 class="hidden">
+        Ск-сеть - Скупка и продажа. Комиссионный магазин. Выкуп техники и оборудования. Магазин
+        электроники
+      </h1>
       <div class="container header__container">
         <a class="header__logo" href="/">
-          <img src="./img/sk-set-logo.jpg" alt="Логотип Ск-сеть" />
+          <img src="./assets/image/logo.png" alt="Логотип Ск-сеть" />
         </a>
         <nav class="header__nav nav">
           <ul class="nav__list">
@@ -34,7 +38,14 @@
       </div>
     </header>
     <main class="main">
-      <section class="hero"></section>
+      <section class="hero">
+        <div class="container">
+          <h2 class="hero__title">СК-сеть</h2>
+          <p class="hero__description">
+            Наша компания специализируется на выгодной скупке мобильной техники и электроники
+          </p>
+        </div>
+      </section>
       <section class="about"></section>
       <section class="product"></section>
       <section class="services"></section>
@@ -43,5 +54,6 @@
       <section class="contacts"></section>
     </main>
     <footer class="footer"></footer>
+    <script type="module" src="/js/main.js"></script>
   </body>
 </html>

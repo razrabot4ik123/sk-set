@@ -1,14 +1,31 @@
 {
   "name": "sk-set",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier . --write"
   },
   "devDependencies": {
-    "vite": "^6.3.1"
+    "@eslint/js": "^9.25.1",
+    "eslint": "^9.25.1",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "globals": "^16.0.0",
+    "prettier": "3.5.3",
+    "sharp": "^0.34.1",
+    "stylelint": "^16.19.1",
+    "stylelint-config-standard": "^38.0.0",
+    "stylelint-order": "^7.0.0",
+    "svgo": "^3.3.2",
+    "vite": "^6.3.1",
+    "vite-plugin-minify": "^2.1.0"
+  },
+  "dependencies": {
+    "intl-tel-input": "^25.3.1",
+    "swiper": "^11.2.6"
   }
 }

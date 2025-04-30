@@ -1,0 +1,78 @@
+@font-face {
+  src:
+    local('Inter'),
+    url('../../assets/fonts/Inter-Regular.woff2') format('woff2'),
+    url('../../assets/fonts/Inter-Regular.woff') format('woff');
+  font-family: Inter;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src:
+    local('Inter'),
+    url('../../assets/fonts/Inter-Medium.woff2') format('woff2'),
+    url('../../assets/fonts/Inter-Medium.woff') format('woff');
+  font-family: Inter;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src:
+    local('Inter'),
+    url('../../assets/fonts/Inter-SemiBold.woff2') format('woff2'),
+    url('../../assets/fonts/Inter-SemiBold.woff') format('woff');
+  font-family: Inter;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src:
+    local('Inter'),
+    url('../../assets/fonts/Inter-Bold.woff2') format('woff2'),
+    url('../../assets/fonts/Inter-Bold.woff') format('woff');
+  font-family: Inter;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* decor font-face */
+
+@font-face {
+  src:
+    local('Lidia'),
+    url('../../assets/fonts/LidiaMedium.woff2') format('woff2'),
+    url('../../assets/fonts/LidiaMedium.woff') format('woff');
+  font-family: Lidia;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src:
+    local('Capture-it'),
+    url('../../assets/fonts/Capture-it.woff2') format('woff2'),
+    url('../../assets/fonts/Capture-it.woff') format('woff');
+  font-family: Capture-it;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  src:
+    local('MyriadPro-Light'),
+    url('../../assets/fonts/MyriadPro-Light.woff2') format('woff2'),
+    url('../../assets/fonts/MyriadPro-Light.woff') format('woff');
+  font-family: MyriadPro-Light;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

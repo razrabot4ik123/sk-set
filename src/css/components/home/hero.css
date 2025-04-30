@@ -1,3 +1,20 @@
-.main {
-  padding-top: 98px;
+.hero {
+  padding: 120px 0;
+}
+
+.hero__title {
+  margin-bottom: 40px;
+  font-size: 90px;
+}
+
+.hero__title span {
+  font-family: Lidia, sans-serif;
+  font-size: 100px;
+  color: var(--red-color);
+}
+
+.hero__description {
+  max-width: 800px;
+  font-size: 30px;
+  color: var(--dark-charcoal-color);
 }

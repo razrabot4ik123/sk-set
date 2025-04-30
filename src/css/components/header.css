@@ -3,6 +3,7 @@
   top: 0;
   right: 0;
   left: 0;
+  border-bottom: 3px solid var(--dark-color);
   padding: 15px 0;
   background: var(--dark-charcoal-color);
 }
@@ -16,7 +17,7 @@
 .header__logo {
   display: block;
   overflow: hidden;
-  max-width: 100px;
+  max-width: 80px;
 }
 
 .nav__list {
@@ -53,4 +54,8 @@
 .nav__link:hover::after {
   opacity: 1;
   visibility: visible;
+}
+
+.main {
+  margin-top: 98px;
 }

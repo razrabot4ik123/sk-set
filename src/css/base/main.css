@@ -39,6 +39,7 @@ p,
 ul,
 ol {
   margin: 0;
+  font-weight: inherit;
 }
 
 input {

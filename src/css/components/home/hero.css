@@ -1,20 +1,44 @@
 .hero {
-  padding: 120px 0;
+  padding: 160px 0;
+}
+
+.hero__container {
+  display: flex;
 }
 
 .hero__title {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-size: 90px;
 }
 
 .hero__title span {
-  font-family: Lidia, sans-serif;
-  font-size: 100px;
+  font-family: Lidia, serif;
+  font-size: 124px;
   color: var(--red-color);
 }
 
+.hero__type {
+  margin-bottom: 50px;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--grey-color);
+}
+
 .hero__description {
-  max-width: 800px;
-  font-size: 30px;
-  color: var(--dark-charcoal-color);
+  margin-bottom: 50px;
+  max-width: 700px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.3;
+  color: var(--other-dark-color);
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 40px;
+}
+
+.hero__decor-text {
+  top: -160px;
+  right: 50px;
 }

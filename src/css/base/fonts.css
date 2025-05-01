@@ -65,14 +65,3 @@
   font-style: normal;
   font-display: swap;
 }
-
-@font-face {
-  src:
-    local('MyriadPro-Light'),
-    url('../../assets/fonts/MyriadPro-Light.woff2') format('woff2'),
-    url('../../assets/fonts/MyriadPro-Light.woff') format('woff');
-  font-family: MyriadPro-Light;
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}

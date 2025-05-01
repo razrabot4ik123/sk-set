@@ -1,0 +1,19 @@
+.button {
+  position: relative;
+  display: block;
+  border: 2px solid var(--light-red-color);
+  border-radius: 50px;
+  padding: 20px 40px;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--other-white-color);
+  background-color: var(--light-red-color);
+  transition:
+    background-color var(--transition),
+    color var(--transition);
+}
+
+.button:hover {
+  color: var(--light-red-color);
+  background-color: var(--white-color);
+}

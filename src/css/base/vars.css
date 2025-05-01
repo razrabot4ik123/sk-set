@@ -3,7 +3,7 @@
   --white-color: #fff;
   --other-white-color: #f5f5f5;
   --dark-color: #000;
-  --dark-charcoal-color: #0c0c0c;
+  --other-dark-color: #0c0c0c;
   --red-color: #fd0000;
   --light-red-color: #e71e2d;
   --other-light-red-color: #d92d2e;
@@ -16,10 +16,11 @@
   --container-width: 1200px;
 
   /* z-index */
+  --z-index-minus-1: -1;
   --z-index-1: 1;
   --z-index-2: 2;
   --z-index-3: 3;
 
   /* transition */
-  --transition: .2s ease-in-out;
+  --transition: 0.3s ease-in-out;
 }

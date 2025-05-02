@@ -66,7 +66,7 @@
   flex-direction: column;
   align-items: center;
   font-family: Capture-it, sans-serif;
-  font-size: 300px;
+  font-size: 290px;
   color: var(--red-color);
 }
 
@@ -76,8 +76,12 @@
   }
 }
 
+.text__decor--white {
+  color: var(--white-color);
+}
+
 .text__decor--first {
-  top: 100px;
+  top: 150px;
   right: 300px;
 }
 

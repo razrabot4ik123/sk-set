@@ -48,12 +48,8 @@
     </header>
     <main class="main">
       <div class="text__decor text__decor--first">
-        <span>С</span>
-        <span>К</span>
-        <span>У</span>
-        <span>П</span>
-        <span>К</span>
-        <span>А</span>
+        <span>С</span><span>К</span><span class="text__decor--white">У</span
+        ><span class="text__decor--white">П</span><span>К</span><span>А</span>
       </div>
       <section class="hero">
         <div class="container container__decor">
@@ -274,21 +270,149 @@
       <section class="services">
         <div class="container">
           <h3 class="services__title">Каталог</h3>
-
         </div>
       </section>
-      <!-- <section class="testimonials">
+      <section class="testimonials">
         <div class="container">
           <h3 class="testimonials__title">Отзывы</h3>
-          <div class="testimonials__slider swiper">
-            <ul class="testimonials__list swiper-wrapper">
-              <li class="testimonials__item swiper-slide">
-                <h4></h4>
-              </li>
-            </ul>
+          <div class="testimonials__slider-wrapper">
+            <div class="testimonials__slider swiper">
+              <ul class="testimonials__list swiper-wrapper">
+                <li class="testimonials__item swiper-slide">
+                  <div class="testimonials__rating">
+                    <img
+                      class="testimonials__rating-img"
+                      src="./assets/icons/rating-icon.svg"
+                      alt="Пять звёзд"
+                    />
+                    <span class="testimonials__rating-num">5.0</span>
+                  </div>
+                  <p class="testimonials__comment">
+                    “Купила здесь монитор, работает отлично! Очень приятное обслуживание)”
+                  </p>
+                  <address class="testimonials__author">
+                    <img
+                      class="testimonials__author-avatar"
+                      src="./assets/image/testimonials-author-1.jpg"
+                      alt="Аватар пользователя оставившего комментарий"
+                    />
+                    <div class="testimonials__author-info">
+                      <span class="testimonials__author-name">Наталья Соболевская</span>
+                      <p class="testimonials__author-product">Товар: Монитор</p>
+                    </div>
+                  </address>
+                </li>
+                <li class="testimonials__item swiper-slide">
+                  <div class="testimonials__rating">
+                    <img
+                      class="testimonials__rating-img"
+                      src="./assets/icons/rating-icon.svg"
+                      alt="Пять звёзд"
+                    />
+                    <span class="testimonials__rating-num">5.0</span>
+                  </div>
+                  <p class="testimonials__comment">
+                    “Купила здесь монитор, работает отлично! Очень приятное обслуживание)”
+                  </p>
+                  <address class="testimonials__author">
+                    <img
+                      class="testimonials__author-avatar"
+                      src="./assets/image/testimonials-author-1.jpg"
+                      alt="Аватар пользователя оставившего комментарий"
+                    />
+                    <div class="testimonials__author-info">
+                      <span class="testimonials__author-name">Наталья Соболевская</span>
+                      <p class="testimonials__author-product">Товар: Монитор</p>
+                    </div>
+                  </address>
+                </li>
+                <li class="testimonials__item swiper-slide">
+                  <div class="testimonials__rating">
+                    <img
+                      class="testimonials__rating-img"
+                      src="./assets/icons/rating-icon.svg"
+                      alt="Пять звёзд"
+                    />
+                    <span class="testimonials__rating-num">5.0</span>
+                  </div>
+                  <p class="testimonials__comment">
+                    “Купила здесь монитор, работает отлично! Очень приятное обслуживание)”
+                  </p>
+                  <address class="testimonials__author">
+                    <img
+                      class="testimonials__author-avatar"
+                      src="./assets/image/testimonials-author-1.jpg"
+                      alt="Аватар пользователя оставившего комментарий"
+                    />
+                    <div class="testimonials__author-info">
+                      <span class="testimonials__author-name">Наталья Соболевская</span>
+                      <p class="testimonials__author-product">Товар: Монитор</p>
+                    </div>
+                  </address>
+                </li>
+                <li class="testimonials__item swiper-slide">
+                  <div class="testimonials__rating">
+                    <img
+                      class="testimonials__rating-img"
+                      src="./assets/icons/rating-icon.svg"
+                      alt="Пять звёзд"
+                    />
+                    <span class="testimonials__rating-num">5.0</span>
+                  </div>
+                  <p class="testimonials__comment">
+                    “Купила здесь монитор, работает отлично! Очень приятное обслуживание)”
+                  </p>
+                  <address class="testimonials__author">
+                    <img
+                      class="testimonials__author-avatar"
+                      src="./assets/image/testimonials-author-1.jpg"
+                      alt="Аватар пользователя оставившего комментарий"
+                    />
+                    <div class="testimonials__author-info">
+                      <span class="testimonials__author-name">Наталья Соболевская</span>
+                      <p class="testimonials__author-product">Товар: Монитор</p>
+                    </div>
+                  </address>
+                </li>
+              </ul>
+            </div>
+            <div class="testimonials__controls">
+              <button class="testimonials__button testimonials__button--prev">
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.73635 13.0364C7.38487 13.3879 6.81503 13.3879 6.46355 13.0364L1.06355 7.63644C0.712082 7.28497 0.712082 6.71512 1.06355 6.36365L6.46356 0.963652C6.81503 0.612179 7.38488 0.612179 7.73635 0.963652C8.08782 1.31512 8.08782 1.88497 7.73635 2.23644L3.87274 6.10005L14.3 6.10005C14.797 6.10005 15.2 6.50299 15.2 7.00005C15.2 7.4971 14.797 7.90005 14.3 7.90005L3.87274 7.90005L7.73635 11.7637C8.08782 12.1151 8.08782 12.685 7.73635 13.0364Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </button>
+              <button class="testimonials__button testimonials__button--next">
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8.26365 0.963555C8.61513 0.612083 9.18497 0.612083 9.53645 0.963555L14.9364 6.36356C15.2879 6.71503 15.2879 7.28488 14.9364 7.63635L9.53645 13.0363C9.18497 13.3878 8.61513 13.3878 8.26365 13.0363C7.91218 12.6849 7.91218 12.115 8.26365 11.7636L12.1273 7.89995L1.70005 7.89995C1.20299 7.89995 0.800049 7.49701 0.800049 6.99995C0.800049 6.5029 1.20299 6.09995 1.70005 6.09995H12.1273L8.26365 2.23635C7.91218 1.88488 7.91218 1.31503 8.26365 0.963555Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <section class="gallery"></section>
       <section class="contacts"></section>
     </main>

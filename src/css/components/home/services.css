@@ -1,5 +1,6 @@
 .services {
   padding: 120px 0;
+  background-color: var(--other-white-color);
 }
 
 @media (max-width: 576px) {

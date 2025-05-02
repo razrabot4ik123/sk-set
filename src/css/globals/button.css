@@ -6,11 +6,18 @@
   padding: 20px 40px;
   font-weight: 700;
   font-size: 18px;
+  text-align: center;
   color: var(--other-white-color);
   background-color: var(--light-red-color);
   transition:
     background-color var(--transition),
     color var(--transition);
+}
+
+@media (max-width: 576px) {
+  .button {
+    padding: 14px 30px;
+  }
 }
 
 .button:hover {

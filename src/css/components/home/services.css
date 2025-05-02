@@ -1,0 +1,28 @@
+.services {
+  padding: 120px 0;
+}
+
+@media (max-width: 576px) {
+  .services {
+    padding: 60px 0;
+  }
+}
+
+.services__title {
+  margin-bottom: 80px;
+  font-weight: 600;
+  font-size: 80px;
+}
+
+@media (max-width: 768px) {
+  .services__title {
+    margin-bottom: 60px;
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .services__title {
+    font-size: 40px;
+  }
+}

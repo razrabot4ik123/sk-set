@@ -7,7 +7,7 @@
   border-top: 2px solid var(--grey-color);
   border-bottom: 2px solid var(--grey-color);
   padding: 15px 0;
-  background-color: #f5f5f5af;
+  background-color: #ffffffaf;
   backdrop-filter: blur(20px);
 }
 
@@ -36,7 +36,7 @@
     justify-content: center;
     width: 80dvw;
     height: 100dvh;
-    background-color: var(--other-grey-color);
+    background-color: var(--white-color);
     opacity: 0;
     visibility: hidden;
     transition:
@@ -75,7 +75,6 @@
 @media (max-width: 768px) {
   .nav__link {
     font-size: 24px;
-    color: var(--white-color);
   }
 }
 
@@ -133,5 +132,5 @@
 }
 
 .main {
-  margin-top: 89px;
+  margin-top: 87px;
 }

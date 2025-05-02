@@ -1,10 +1,29 @@
 .hero {
-  padding: 160px 0;
+  overflow: hidden;
+  padding: 160px 0 120px;
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 100px 0 60px;
+  }
 }
 
 .hero__title {
   margin-bottom: 20px;
   font-size: 90px;
+}
+
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero__title {
+    font-size: 50px;
+  }
 }
 
 .hero__title span {
@@ -13,11 +32,37 @@
   color: var(--red-color);
 }
 
+@media (max-width: 768px) {
+  .hero__title span {
+    font-size: 104px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero__title span {
+    font-size: 84px;
+  }
+}
+
 .hero__type {
   margin-bottom: 50px;
   font-weight: 600;
   font-size: 20px;
   color: var(--grey-color);
+}
+
+@media (max-width: 768px) {
+  .hero__type {
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero__type {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
 }
 
 .hero__description {
@@ -29,12 +74,73 @@
   color: var(--other-dark-color);
 }
 
-.hero__buttons {
-  display: flex;
-  gap: 40px;
+@media (max-width: 992px) {
+  .hero__description {
+    font-size: 24px;
+  }
 }
 
-.hero__decor-text {
-  top: -160px;
-  right: 50px;
+@media (max-width: 768px) {
+  .hero__description {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero__description {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero__description {
+    font-size: 18px;
+  }
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 20px 40px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .hero__buttons {
+    flex-direction: column;
+  }
+}
+
+.hero__additionally {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 576px) {
+  .hero__additionally {
+    flex-direction: column;
+  }
+}
+
+.hero__additionally-link {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-style: normal;
+  color: var(--grey-color);
+  transition: color var(--transition);
+}
+
+.hero__additionally-link svg {
+  flex-shrink: 0;
+}
+
+.hero__additionally-geolocation span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.hero__additionally-link:hover {
+  color: var(--dark-color);
 }

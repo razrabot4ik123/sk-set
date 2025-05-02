@@ -7,6 +7,7 @@
     <title>Ск-сеть - Комиссионный магазин</title>
   </head>
   <body>
+    <div class="overlay" data-burger="overlay"></div>
     <header class="header">
       <h1 class="hidden">
         Ск-сеть - Скупка и продажа. Комиссионный магазин. Выкуп техники и оборудования. Магазин
@@ -16,7 +17,7 @@
         <a class="header__logo" href="/">
           <img src="./assets/image/logo.png" alt="Логотип Ск-сеть" />
         </a>
-        <nav class="header__nav nav">
+        <nav class="header__nav nav" data-burger="menu">
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="#">О нас</a>
@@ -35,11 +36,14 @@
             </li>
           </ul>
         </nav>
+        <button class="header__burger burger" data-burger="button" aria-label="Burger menu">
+          <span class="burger__line"></span>
+        </button>
       </div>
     </header>
     <main class="main">
       <section class="hero">
-        <div class="container hero__container container__decor">
+        <div class="container container__decor">
           <div class="hero__info">
             <h2 class="hero__title"><span>СК</span>-сеть</h2>
             <p class="hero__type">
@@ -63,7 +67,7 @@
           </div>
         </div>
       </section>
-      <div class="img-decor">
+      <!-- <div class="img-decor">
         <img
           src="./assets/image/landing_background.png"
           alt="Клавиатура от ноутбука с rgb подсветкой"
@@ -73,7 +77,7 @@
         <div class="container">
           <h3 class="extras__title">О нас</h3>
         </div>
-      </section>
+      </section> -->
       <section class="services"></section>
       <section class="testimonials"></section>
       <section class="gallery"></section>

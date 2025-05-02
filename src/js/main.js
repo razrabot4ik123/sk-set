@@ -4,3 +4,6 @@ import 'swiper/css/effect-fade';
 import '/css/main.css';
 
 // components
+import { useBurger } from './components/burger';
+
+useBurger();

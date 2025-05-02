@@ -8,6 +8,7 @@
   --light-red-color: #e71e2d;
   --other-light-red-color: #d92d2e;
   --grey-color: #565656;
+  --other-grey-color: #303336;
   --light-grey-color: #ccc;
   --other-light-grey-color: #d9d9d9;
 
@@ -20,7 +21,27 @@
   --z-index-1: 1;
   --z-index-2: 2;
   --z-index-3: 3;
+  --z-index-4: 4;
+  --z-index-5: 5;
 
   /* transition */
   --transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --container-width: 1000px;
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    --container-width: 800px;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --container-width: 480px;
+  }
 }

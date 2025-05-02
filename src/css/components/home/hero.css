@@ -2,10 +2,6 @@
   padding: 160px 0;
 }
 
-.hero__container {
-  display: flex;
-}
-
 .hero__title {
   margin-bottom: 20px;
   font-size: 90px;

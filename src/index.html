@@ -47,9 +47,11 @@
       </div>
     </header>
     <main class="main">
-      <div class="text__decor text__decor--first">
-        <span>С</span><span>К</span><span class="text__decor--white">У</span
-        ><span class="text__decor--white">П</span><span>К</span><span>А</span>
+      <div class="text__decor-wrapper">
+        <div class="text__decor text__decor--first">
+          <span>С</span><span>К</span><span class="text__decor--white">У</span
+          ><span class="text__decor--white">П</span><span>К</span><span>А</span>
+        </div>
       </div>
       <section class="hero">
         <div class="container container__decor">
@@ -62,8 +64,8 @@
               Наша компания специализируется на выгодной скупке мобильной техники и электроники
             </p>
             <div class="hero__buttons">
-              <a class="hero__button button" href="#">Узнать больше</a>
-              <a class="hero__button button" href="#">Как доехать</a>
+              <a class="hero__button button" href="#">Посмотреть товар</a>
+              <a class="hero__button button" href="#">Выложить на продажу</a>
             </div>
             <address class="hero__additionally">
               <a
@@ -414,7 +416,65 @@
         </div>
       </section>
       <section class="gallery"></section>
-      <section class="contacts"></section>
+      <div class="text__decor-wrapper">
+        <div class="text__decor text__decor--second">
+          <span>П</span><span>Р</span><span>О</span><span>Д</span><span>А</span><span>Ж</span
+          ><span>А</span>
+        </div>
+      </div>
+      <section class="contacts">
+        <div class="container">
+          <h3 class="contacts__title">Контакты</h3>
+          <div class="contacts__top">
+            <h4></h4>
+            <div class="contacts__map">
+              <script
+                type="text/javascript"
+                charset="utf-8"
+                async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad0061aa01bbdae8b3d90c1eb301330535a334ac8c57acaef7cf38e1ae4e8d492&amp;width=900&amp;height=500&amp;lang=ru_RU&amp;scroll=true"
+              ></script>
+            </div>
+          </div>
+          <div class="contacts__bottom">
+            <h4 class="contacts__bottom-title">
+              Проверьте наличие и&nbsp;оформите предварительный&nbsp;заказ
+            </h4>
+            <form class="contacts__bottom-form form">
+              <label class="form__label">
+                Имя
+                <input
+                  class="form__input"
+                  type="text"
+                  name="user-name"
+                  required
+                  placeholder="Иванов Иван"
+                />
+              </label>
+              <label class="form__label">
+                Номер телефона
+                <input
+                  id="phone"
+                  class="form__input"
+                  type="tel"
+                  name="user-phone-number"
+                  required
+                  placeholder=""
+                />
+              </label>
+              <label class="form__label">
+                Интересующий товар
+                <textarea
+                  class="form__input form__input--textarea"
+                  name="user-message"
+                  placeholder="iPhone 15 Pro 256gb silver"
+                ></textarea>
+              </label>
+              <button class="form__button button">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer"></footer>
     <script type="module" src="/js/main.js"></script>

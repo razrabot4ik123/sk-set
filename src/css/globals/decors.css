@@ -59,6 +59,10 @@
   border-radius: 50%;
 }
 
+.text__decor-wrapper {
+  position: relative;
+}
+
 .text__decor {
   position: absolute;
   z-index: var(--z-index-1);
@@ -81,7 +85,7 @@
 }
 
 .text__decor--first {
-  top: 150px;
+  top: 63px;
   right: 300px;
 }
 
@@ -95,6 +99,11 @@
   .text__decor--first {
     right: 15px;
   }
+}
+
+.text__decor--second {
+  top: 0;
+  right: 300px;
 }
 
 .img-decor {

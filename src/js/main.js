@@ -6,6 +6,8 @@ import '/css/main.css';
 // components
 import { useBurger } from './components/burger';
 import { useTestimonialsSlider } from './components/slider';
+import { usePhone } from './components/phone';
 
 useBurger();
 useTestimonialsSlider();
+usePhone();

@@ -7,5 +7,6 @@
 @import './components/home/extras';
 @import './components/home/services';
 @import './components/home/testimonials';
+@import './components/home/gallery';
 @import './components/home/contacts';
 @import './components/footer';

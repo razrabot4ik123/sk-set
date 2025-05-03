@@ -61,6 +61,7 @@
 
 .text__decor-wrapper {
   position: relative;
+  user-select: none;
 }
 
 .text__decor {
@@ -85,7 +86,7 @@
 }
 
 .text__decor--first {
-  top: 63px;
+  top: 64px;
   right: 300px;
 }
 
@@ -102,8 +103,26 @@
 }
 
 .text__decor--second {
-  top: 0;
-  right: 300px;
+  top: -30px;
+  right: 250px;
+}
+
+@media (max-width: 1650px) {
+  .text__decor--second {
+    right: 100px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .text__decor--second {
+    right: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .text__decor--second {
+    display: none;
+  }
 }
 
 .img-decor {

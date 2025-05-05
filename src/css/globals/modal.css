@@ -130,10 +130,16 @@
   }
 }
 
-.modal__form .form__label:nth-child(n + 3) {
+.modal__form .form__label:nth-child(n + 4) {
   display: none;
 }
 
-.modal__form .form__button {
+.modal__form .form__button--prev {
   display: none;
+}
+
+@media (max-width: 380px) {
+  .modal__form .form__button {
+    padding: 14px 20px;
+  }
 }

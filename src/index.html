@@ -15,7 +15,7 @@
         <a class="modal__close" href="#"></a>
         <form class="modal__form form">
           <label class="form__label form__label--modal">
-            Имя
+            <div>Имя <span class="form__label--required">*Обязательно</span></div>
             <input
               class="form__input"
               type="text"
@@ -25,7 +25,7 @@
             />
           </label>
           <label class="form__label form__label--modal">
-            Номер телефона
+            <div>Номер телефона <span class="form__label--required">*Обязательно</span></div>
             <input
               id="phone"
               class="form__input"
@@ -36,7 +36,10 @@
             />
           </label>
           <label class="form__label form__label--modal">
-            Полная и точная модель устройства
+            <div>
+              Полная и точная модель устройства
+              <span class="form__label--required">*Обязательно</span>
+            </div>
             <textarea
               class="form__input form__input--textarea"
               name="user-message"
@@ -85,9 +88,13 @@
             />
           </label>
           <div class="form__buttons">
-            <button class="form__button--next button" data-modal="next-btn">Дальше</button>
-            <button class="form__button--prev button" data-modal="prev-btn">Назад</button>
-            <button class="form__button button" data-modal="submit">Отправить</button>
+            <button class="form__button--next form__button button" data-modal="next-btn">
+              Дальше
+            </button>
+            <button class="form__button--prev form__button button" data-modal="prev-btn">
+              Назад
+            </button>
+            <button class="form__button form__button button">Отправить</button>
           </div>
         </form>
       </div>
@@ -351,6 +358,312 @@
       <section id="services" class="services">
         <div class="container">
           <h3 class="services__title">Каталог</h3>
+          <div class="services__filter swiper">
+            <ul class="services__filter-list swiper-wrapper">
+              <li class="services__filter-item swiper-slide">
+                <a class="services__filter-link services__filter-link--active" href="#">Телефоны</a>
+              </li>
+              <li class="services__filter-item swiper-slide">
+                <a class="services__filter-link" href="#">Ноутбуки</a>
+              </li>
+              <li class="services__filter-item swiper-slide">
+                <a class="services__filter-link" href="#">Аксессуары</a>
+              </li>
+              <li class="services__filter-item swiper-slide">
+                <a class="services__filter-link" href="#">Компьютеры</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="services__list">
+            <li class="services__item">
+              <a class="services__link" href="#">
+                <div class="services__item-slider swiper">
+                  <ul class="services__item-imgs swiper-wrapper">
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-1.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-2.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-3.jpg" alt="Изображение товара" />
+                    </li>
+                  </ul>
+                  <div class="services__item-pagination"></div>
+                </div>
+                <span class="services__item-name">Cмapтфон Iрhоnе 11, 64 гб</span>
+                <p class="services__item-price"><span>17 000</span> ₽</p>
+                <p class="services__item-description">
+                  Cмapтфон Iрhоnе 11, 64 гб (зелёный) B идeaльном cоcтоянии. Вcе функции oт А до Я
+                  pабочиe. Faсе ID, True Tone pабoтaет oтличнo. Любые...
+                </p>
+              </a>
+            </li>
+            <li class="services__item">
+              <a class="services__link" href="#">
+                <div class="services__item-slider swiper">
+                  <ul class="services__item-imgs swiper-wrapper">
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-1.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-2.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-3.jpg" alt="Изображение товара" />
+                    </li>
+                  </ul>
+                  <div class="services__item-pagination"></div>
+                </div>
+                <span class="services__item-name">Cмapтфон Iрhоnе 11, 64 гб</span>
+                <p class="services__item-price"><span>17 000</span> ₽</p>
+                <p class="services__item-description">
+                  Cмapтфон Iрhоnе 11, 64 гб (зелёный) B идeaльном cоcтоянии. Вcе функции oт А до Я
+                  pабочиe. Faсе ID, True Tone pабoтaет oтличнo. Любые...
+                </p>
+              </a>
+            </li>
+            <li class="services__item">
+              <a class="services__link" href="#">
+                <div class="services__item-slider swiper">
+                  <ul class="services__item-imgs swiper-wrapper">
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-1.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-2.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-3.jpg" alt="Изображение товара" />
+                    </li>
+                  </ul>
+                  <div class="services__item-pagination"></div>
+                </div>
+                <span class="services__item-name">Cмapтфон Iрhоnе 11, 64 гб</span>
+                <p class="services__item-price"><span>17 000</span> ₽</p>
+                <p class="services__item-description">
+                  Cмapтфон Iрhоnе 11, 64 гб (зелёный) B идeaльном cоcтоянии. Вcе функции oт А до Я
+                  pабочиe. Faсе ID, True Tone pабoтaет oтличнo. Любые...
+                </p>
+              </a>
+            </li>
+            <li class="services__item">
+              <a class="services__link" href="#">
+                <div class="services__item-slider swiper">
+                  <ul class="services__item-imgs swiper-wrapper">
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-1.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-2.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-3.jpg" alt="Изображение товара" />
+                    </li>
+                  </ul>
+                  <div class="services__item-pagination"></div>
+                </div>
+                <span class="services__item-name">Cмapтфон Iрhоnе 11, 64 гб</span>
+                <p class="services__item-price"><span>17 000</span> ₽</p>
+                <p class="services__item-description">
+                  Cмapтфон Iрhоnе 11, 64 гб (зелёный) B идeaльном cоcтоянии. Вcе функции oт А до Я
+                  pабочиe. Faсе ID, True Tone pабoтaет oтличнo. Любые...
+                </p>
+              </a>
+            </li>
+            <li class="services__item">
+              <a class="services__link" href="#">
+                <div class="services__item-slider swiper">
+                  <ul class="services__item-imgs swiper-wrapper">
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-1.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-2.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-3.jpg" alt="Изображение товара" />
+                    </li>
+                  </ul>
+                  <div class="services__item-pagination"></div>
+                </div>
+                <span class="services__item-name">Cмapтфон Iрhоnе 11, 64 гб</span>
+                <p class="services__item-price"><span>17 000</span> ₽</p>
+                <p class="services__item-description">
+                  Cмapтфон Iрhоnе 11, 64 гб (зелёный) B идeaльном cоcтоянии. Вcе функции oт А до Я
+                  pабочиe. Faсе ID, True Tone pабoтaет oтличнo. Любые...
+                </p>
+              </a>
+            </li>
+            <li class="services__item">
+              <a class="services__link" href="#">
+                <div class="services__item-slider swiper">
+                  <ul class="services__item-imgs swiper-wrapper">
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-1.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-2.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-3.jpg" alt="Изображение товара" />
+                    </li>
+                  </ul>
+                  <div class="services__item-pagination"></div>
+                </div>
+                <span class="services__item-name">Cмapтфон Iрhоnе 11, 64 гб</span>
+                <p class="services__item-price"><span>17 000</span> ₽</p>
+                <p class="services__item-description">
+                  Cмapтфон Iрhоnе 11, 64 гб (зелёный) B идeaльном cоcтоянии. Вcе функции oт А до Я
+                  pабочиe. Faсе ID, True Tone pабoтaет oтличнo. Любые...
+                </p>
+              </a>
+            </li>
+            <li class="services__item">
+              <a class="services__link" href="#">
+                <div class="services__item-slider swiper">
+                  <ul class="services__item-imgs swiper-wrapper">
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-1.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-2.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-3.jpg" alt="Изображение товара" />
+                    </li>
+                  </ul>
+                  <div class="services__item-pagination"></div>
+                </div>
+                <span class="services__item-name">Cмapтфон Iрhоnе 11, 64 гб</span>
+                <p class="services__item-price"><span>17 000</span> ₽</p>
+                <p class="services__item-description">
+                  Cмapтфон Iрhоnе 11, 64 гб (зелёный) B идeaльном cоcтоянии. Вcе функции oт А до Я
+                  pабочиe. Faсе ID, True Tone pабoтaет oтличнo. Любые...
+                </p>
+              </a>
+            </li>
+            <li class="services__item">
+              <a class="services__link" href="#">
+                <div class="services__item-slider swiper">
+                  <ul class="services__item-imgs swiper-wrapper">
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-1.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-2.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-3.jpg" alt="Изображение товара" />
+                    </li>
+                  </ul>
+                  <div class="services__item-pagination"></div>
+                </div>
+                <span class="services__item-name">Cмapтфон Iрhоnе 11, 64 гб</span>
+                <p class="services__item-price"><span>17 000</span> ₽</p>
+                <p class="services__item-description">
+                  Cмapтфон Iрhоnе 11, 64 гб (зелёный) B идeaльном cоcтоянии. Вcе функции oт А до Я
+                  pабочиe. Faсе ID, True Tone pабoтaет oтличнo. Любые...
+                </p>
+              </a>
+            </li>
+            <li class="services__item">
+              <a class="services__link" href="#">
+                <div class="services__item-slider swiper">
+                  <ul class="services__item-imgs swiper-wrapper">
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-1.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-2.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-3.jpg" alt="Изображение товара" />
+                    </li>
+                  </ul>
+                  <div class="services__item-pagination"></div>
+                </div>
+                <span class="services__item-name">Cмapтфон Iрhоnе 11, 64 гб</span>
+                <p class="services__item-price"><span>17 000</span> ₽</p>
+                <p class="services__item-description">
+                  Cмapтфон Iрhоnе 11, 64 гб (зелёный) B идeaльном cоcтоянии. Вcе функции oт А до Я
+                  pабочиe. Faсе ID, True Tone pабoтaет oтличнo. Любые...
+                </p>
+              </a>
+            </li>
+            <li class="services__item">
+              <a class="services__link" href="#">
+                <div class="services__item-slider swiper">
+                  <ul class="services__item-imgs swiper-wrapper">
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-1.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-2.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-3.jpg" alt="Изображение товара" />
+                    </li>
+                  </ul>
+                  <div class="services__item-pagination"></div>
+                </div>
+                <span class="services__item-name">Cмapтфон Iрhоnе 11, 64 гб</span>
+                <p class="services__item-price"><span>17 000</span> ₽</p>
+                <p class="services__item-description">
+                  Cмapтфон Iрhоnе 11, 64 гб (зелёный) B идeaльном cоcтоянии. Вcе функции oт А до Я
+                  pабочиe. Faсе ID, True Tone pабoтaет oтличнo. Любые...
+                </p>
+              </a>
+            </li>
+            <li class="services__item">
+              <a class="services__link" href="#">
+                <div class="services__item-slider swiper">
+                  <ul class="services__item-imgs swiper-wrapper">
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-1.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-2.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-3.jpg" alt="Изображение товара" />
+                    </li>
+                  </ul>
+                  <div class="services__item-pagination"></div>
+                </div>
+                <span class="services__item-name">Cмapтфон Iрhоnе 11, 64 гб</span>
+                <p class="services__item-price"><span>17 000</span> ₽</p>
+                <p class="services__item-description">
+                  Cмapтфон Iрhоnе 11, 64 гб (зелёный) B идeaльном cоcтоянии. Вcе функции oт А до Я
+                  pабочиe. Faсе ID, True Tone pабoтaет oтличнo. Любые...
+                </p>
+              </a>
+            </li>
+            <li class="services__item">
+              <a class="services__link" href="#">
+                <div class="services__item-slider swiper">
+                  <ul class="services__item-imgs swiper-wrapper">
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-1.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-2.jpg" alt="Изображение товара" />
+                    </li>
+                    <li class="services__item-img swiper-slide">
+                      <img src="./assets/image/services-3.jpg" alt="Изображение товара" />
+                    </li>
+                  </ul>
+                  <div class="services__item-pagination"></div>
+                </div>
+                <span class="services__item-name">Cмapтфон Iрhоnе 11, 64 гб</span>
+                <p class="services__item-price"><span>17 000</span> ₽</p>
+                <p class="services__item-description">
+                  Cмapтфон Iрhоnе 11, 64 гб (зелёный) B идeaльном cоcтоянии. Вcе функции oт А до Я
+                  pабочиe. Faсе ID, True Tone pабoтaет oтличнo. Любые...
+                </p>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
       <section id="testimonials" class="testimonials">
@@ -742,7 +1055,7 @@
             </h4>
             <form class="contacts__bottom-form form">
               <label class="form__label">
-                Имя
+                <div>Имя <span class="form__label--required">*Обязательно</span></div>
                 <input
                   class="form__input"
                   type="text"
@@ -752,7 +1065,7 @@
                 />
               </label>
               <label class="form__label">
-                Номер телефона
+                <div>Номер телефона <span class="form__label--required">*Обязательно</span></div>
                 <input
                   id="phone"
                   class="form__input"
@@ -778,9 +1091,17 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a class="footer__logo" href="/">
-          <img src="./assets/image/logo.png" alt="Логотип Ск-сеть" />
-        </a>
+        <div class="footer__info">
+          <a class="footer__logo" href="/">
+            <img src="./assets/image/logo.png" alt="Логотип Ск-сеть" />
+          </a>
+          <p class="footer__org">
+            Наименование организации: Быкова&nbsp;Валентина&nbsp;Александровна <br />
+            <br />
+            ОГРН/ОГРНИП: 323547600194111
+          </p>
+        </div>
+        <p class="footer__copyright">© Copyright 2025, Все права защищены</p>
       </div>
     </footer>
     <script type="module" src="/js/main.js"></script>

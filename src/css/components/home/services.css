@@ -27,3 +27,137 @@
     font-size: 40px;
   }
 }
+
+.services__filter {
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--grey-color);
+  padding-bottom: 30px;
+}
+
+.services__filter-list {
+  gap: 20px;
+}
+
+.services__filter-item {
+  width: auto;
+}
+
+.services__filter-link {
+  display: block;
+  border: 2px solid var(--light-red-color);
+  border-radius: 100px;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--dark-color);
+  background-color: var(--white-color);
+  transition:
+    color var(--transition),
+    background-color var(--transition);
+}
+
+.services__filter-link:hover {
+  color: var(--white-color);
+  background-color: var(--light-red-color);
+}
+
+.services__filter-link--active {
+  color: var(--white-color);
+  background-color: var(--light-red-color);
+}
+
+.services__list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services__item {
+  max-width: 277px;
+}
+
+@media (max-width: 1200px) {
+  .services__item {
+    max-width: 307px;
+  }
+}
+
+@media (max-width: 992px) {
+  .services__item {
+    max-width: 359px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services__item {
+    max-width: 263px;
+  }
+}
+
+@media (max-width: 576px) {
+  .services__item {
+    max-width: 100%;
+  }
+}
+
+.services__link {
+  display: block;
+}
+
+.services__item-slider {
+  margin-bottom: 10px;
+}
+
+.services__item-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  padding-bottom: 100%;
+}
+
+.services__item-img img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transition: transform var(--transition);
+}
+
+.services__link:hover .services__item-img img {
+  transform: scale(1.1);
+}
+
+.services__item-pagination {
+  position: absolute;
+  z-index: var(--z-index-2);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--red-color);
+}
+
+.services__item-name {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: var(--dark-color);
+}
+
+.services__item-price {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--dark-color);
+}
+
+.services__item-price span {
+  font-weight: 600;
+}
+
+.services__item-description {
+  font-size: 14px;
+  color: var(--grey-color);
+}

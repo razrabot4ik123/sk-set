@@ -1,12 +1,29 @@
 import Swiper from 'swiper';
 import { Navigation, EffectFade, Pagination, Autoplay, Scrollbar } from 'swiper/modules';
 
+export const useServicesSlider = () => {
+  document.querySelectorAll('.services__item-slider').forEach((sliderElem) => {
+    new Swiper(sliderElem, {
+      modules: [EffectFade, Pagination],
+      slidesPerView: 1,
+      loop: true,
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true,
+      },
+      pagination: {
+        el: '.services__item-pagination',
+        dynamicBullets: true,
+      },
+    });
+  });
+};
+
 export const useTestimonialsSlider = () => {
   new Swiper('.testimonials__slider', {
-    modules: [Navigation, EffectFade, Pagination],
+    modules: [Navigation, EffectFade],
     slidesPerView: 1,
     loop: true,
-    spaceBetween: 24,
     effect: 'fade',
     fadeEffect: {
       crossFade: true,

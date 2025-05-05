@@ -15,7 +15,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './src/index.html',
-        main: './src/service.html',
+        service: './src/service.html',
       },
     },
   },

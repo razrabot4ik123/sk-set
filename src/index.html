@@ -12,6 +12,17 @@
         <h4 class="modal__window-title">Оставьте заявку или позвоните нам</h4>
       </div>
     </div> -->
+    <div class="work-status" data-workStatus="window">
+      <div class="work-status__wrapper" data-workStatus="wrapper">
+        <h4 class="work-status__title">График работы</h4>
+        <a class="work-status__close" href="#"></a>
+        <ul class="work-status__list">
+          <li class="work-status__item">
+            Каждый день <span class="work-status__item-time">10:00 – 20:00</span>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="overlay" data-burger="overlay"></div>
     <header class="header">
       <h1 class="hidden">
@@ -25,19 +36,19 @@
         <nav class="header__nav nav" data-burger="menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#">О нас</a>
+              <a class="nav__link" href="#extras">О нас</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Каталог</a>
+              <a class="nav__link" href="#services">Каталог</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Отзывы</a>
+              <a class="nav__link" href="#testimonials">Отзывы</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Фото</a>
+              <a class="nav__link" href="#gallery">Фото</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Контакты</a>
+              <a class="nav__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -88,23 +99,11 @@
                 </svg>
                 <span>Новосибирск, улица Авиастроителей, 15</span></a
               >
-              <a class="hero__additionally-link hero__additionally-working-hours" href="#"
-                ><svg
-                  class="meta__icon"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8ZM12.018 11.0752C12.3357 10.6234 12.227 9.99963 11.7752 9.68197L9 7.73067V4C9 3.44772 8.55229 3 8 3C7.44772 3 7 3.44772 7 4V8.25C7 8.57557 7.15849 8.88077 7.42482 9.06803L10.6248 11.318C11.0766 11.6357 11.7004 11.527 12.018 11.0752Z"
-                  ></path>
-                </svg>
-                Открыто / Закрыто</a
-              >
+              <a
+                class="hero__additionally-link hero__additionally-working-hours"
+                data-workStatus="btn"
+                href="#"
+              ></a>
             </address>
           </div>
         </div>
@@ -115,7 +114,7 @@
           alt="Клавиатура от ноутбука с rgb подсветкой"
         />
       </div>
-      <section class="extras">
+      <section id="extras" class="extras">
         <div class="container">
           <h3 class="extras__title">О нас</h3>
           <ul class="extras__list">
@@ -269,12 +268,12 @@
           </ul>
         </div>
       </section>
-      <section class="services">
+      <section id="services" class="services">
         <div class="container">
           <h3 class="services__title">Каталог</h3>
         </div>
       </section>
-      <section class="testimonials">
+      <section id="testimonials" class="testimonials">
         <div class="container">
           <h3 class="testimonials__title">Отзывы</h3>
           <div class="testimonials__slider-wrapper">
@@ -415,7 +414,7 @@
           </div>
         </div>
       </section>
-      <section class="gallery">
+      <section id="gallery" class="gallery">
         <div class="container">
           <h3 class="gallery__title">Фото</h3>
           <div class="gallery__list-slider swiper">
@@ -600,7 +599,7 @@
           ><span>А</span>
         </div>
       </div>
-      <section class="contacts">
+      <section id="contacts" class="contacts">
         <div class="container">
           <h3 class="contacts__title">Контакты</h3>
           <div class="contacts__top">

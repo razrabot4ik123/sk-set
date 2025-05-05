@@ -27,6 +27,7 @@
   "dependencies": {
     "fslightbox": "^3.5.1",
     "intl-tel-input": "^25.3.1",
+    "luxon": "^3.6.1",
     "swiper": "^11.2.6"
   }
 }

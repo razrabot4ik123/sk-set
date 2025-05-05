@@ -1,0 +1,115 @@
+.work-status {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-index-5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: #0000005e;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition:
+    opacity var(--transition),
+    visibility var(--transition),
+    transform var(--transition);
+}
+
+.work-status--opened {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.work-status__wrapper {
+  position: relative;
+  border-radius: 20px;
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 700px;
+  background-color: var(--white-color);
+}
+
+.work-status__title {
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--grey-color);
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+@media (max-width: 576px) {
+  .work-status__title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 380px) {
+  .work-status__title {
+    font-size: 20px;
+  }
+}
+
+.work-status__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.work-status__close::before,
+.work-status__close::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: var(--dark-color);
+  transition: background-color var(--transition);
+}
+
+.work-status__close:hover.work-status__close::before,
+.work-status__close:hover.work-status__close::after {
+  background-color: var(--grey-color);
+}
+
+.work-status__close::before {
+  transform: rotate(45deg);
+}
+
+.work-status__close::after {
+  transform: rotate(-45deg);
+}
+
+.work-status__item {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+@media (max-width: 576px) {
+  .work-status__item {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .work-status__item {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.work-status__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.work-status__item-time {
+  font-weight: 500;
+}

@@ -30,7 +30,7 @@
 
 .modal__window {
   position: relative;
-  border-radius: 20px;
+  border-radius: 14px;
   padding: 30px 20px;
   background-color: var(--white-color);
 }
@@ -76,7 +76,6 @@
 @media (max-width: 576px) {
   .modal__close {
     top: 0;
-    right: 0;
   }
 }
 

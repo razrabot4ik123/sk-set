@@ -1,0 +1,139 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-index-5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 15px;
+  background-color: #0000005e;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition:
+    opacity var(--transition),
+    visibility var(--transition),
+    transform var(--transition);
+}
+
+@media (max-width: 380px) {
+  .modal {
+    padding: 0 15px;
+  }
+}
+
+.modal--opened {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.modal__window {
+  position: relative;
+  border-radius: 20px;
+  padding: 30px 20px;
+  background-color: var(--white-color);
+}
+
+.modal__window-title {
+  margin-bottom: 30px;
+  max-width: 600px;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+@media (max-width: 768px) {
+  .modal__window-title {
+    max-width: 500px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal__window-title {
+    margin-bottom: 20px;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 380px) {
+  .modal__window-title {
+    font-size: 18px;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 576px) {
+  .modal__close {
+    top: 0;
+    right: 0;
+  }
+}
+
+.modal__close::before,
+.modal__close::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: var(--dark-color);
+  transition: background-color var(--transition);
+}
+
+.modal__close:hover.modal__close::before,
+.modal__close:hover.modal__close::after {
+  background-color: var(--grey-color);
+}
+
+.modal__close::before {
+  transform: rotate(45deg);
+}
+
+.modal__close::after {
+  transform: rotate(-45deg);
+}
+
+.modal__form {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.modal__form .form__label {
+  font-size: 18px;
+}
+
+@media (max-width: 576px) {
+  .modal__form .form__label {
+    font-size: 16px;
+  }
+}
+
+.modal__form .form__input--textarea {
+  height: 90px;
+}
+
+@media (max-width: 576px) {
+  .modal__form .form__input--textarea {
+    height: 80px;
+  }
+}
+
+.modal__form .form__label:nth-child(n + 3) {
+  display: none;
+}
+
+.modal__form .form__button {
+  display: none;
+}

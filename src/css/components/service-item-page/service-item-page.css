@@ -7,3 +7,26 @@
     padding: 100px 0 60px;
   }
 }
+
+.service-item-page__slider {
+}
+
+.service-item-page__slider-item {
+  height: 600px;
+}
+
+.service-item-page__slider-item img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.service-item-page__slider-button {
+  position: absolute;
+}
+
+.service-item-page__slider-pagination {
+  position: absolute;
+  z-index: var(--z-index-2);
+}

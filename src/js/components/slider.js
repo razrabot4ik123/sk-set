@@ -1,4 +1,5 @@
 import Swiper from 'swiper';
+import { effectInit } from 'swiper/effect-utils';
 import { Navigation, EffectFade, Pagination, Autoplay, Scrollbar } from 'swiper/modules';
 
 export const useFilterServicesSlider = () => {
@@ -116,19 +117,17 @@ export const useGallerySlider = () => {
 
 export const useServiceItemPageSlider = () => {
   new Swiper('.service-item-page__slider', {
-    modules: [Navigation, EffectFade, Pagination],
-    slidesPerView: 1,
+    modules: [Navigation, Pagination],
+    slidesPerView: 2.5,
+    spaceBetween: 20,
+    centeredSlides: true,
     loop: true,
-    effect: 'fade',
     navigation: {
-      nextEl: '.service-item-page__item-button--next',
-      prevEl: '.service-item-page__item-button--prev',
-    },
-    fadeEffect: {
-      crossFade: true,
+      nextEl: '.service-item-page__slider-button--next',
+      prevEl: '.service-item-page__slider-button--prev',
     },
     pagination: {
-      el: '.service-item-page__item-pagination',
+      el: '.service-item-page__slider-pagination',
       dynamicBullets: true,
     },
   });

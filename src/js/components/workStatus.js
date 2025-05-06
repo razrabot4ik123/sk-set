@@ -24,7 +24,8 @@ export const useOpenWorkStatus = () => {
 
   if (!btn || !modalWindow) return;
 
-  function openWorkStatus() {
+  function openWorkStatus(e) {
+    e.preventDefault();
     modalWindow.classList.add('work-status--opened');
     body.classList.add('body--fixed');
   }

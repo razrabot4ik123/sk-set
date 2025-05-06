@@ -9,7 +9,7 @@
   height: 551px;
   background-color: var(--red-color);
   opacity: 0.13;
-  filter: blur(240px);
+  filter: blur(300px);
 }
 
 @media (max-width: 992px) {

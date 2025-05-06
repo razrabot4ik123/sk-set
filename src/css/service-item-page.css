@@ -3,10 +3,6 @@
 
 /* components */
 @import './components/header';
-@import './components/home/hero';
-@import './components/home/extras';
 @import './components/services';
-@import './components/home/testimonials';
-@import './components/home/gallery';
 @import './components/contacts';
 @import './components/footer';

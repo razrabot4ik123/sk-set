@@ -34,8 +34,11 @@
   padding-bottom: 30px;
 }
 
-.services__filter-list {
-  gap: 20px;
+@media (max-width: 576px) {
+  .services__filter {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .services__filter-item {
@@ -49,11 +52,18 @@
   padding: 10px 20px;
   font-weight: 500;
   font-size: 18px;
+  text-align: center;
   color: var(--dark-color);
   background-color: var(--white-color);
   transition:
     color var(--transition),
     background-color var(--transition);
+}
+
+@media (max-width: 576px) {
+  .services__filter-link {
+    font-size: 16px;
+  }
 }
 
 .services__filter-link:hover {
@@ -137,6 +147,54 @@
 
 .swiper-pagination-bullet-active {
   background-color: var(--red-color);
+}
+
+.services__item-navigation {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  left: 5px;
+  z-index: var(--z-index-2);
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.services__item-navigation-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--red-color);
+  border-radius: 50%;
+  width: 39px;
+  height: 39px;
+  background-color: var(--white-color);
+  opacity: 0.6;
+  transition:
+    background-color var(--transition),
+    opacity var(--transition);
+}
+
+.services__item-navigation-button:hover {
+  background-color: var(--red-color);
+  opacity: 1;
+}
+
+.services__item-navigation-button svg path {
+  fill: var(--red-color);
+  transition: fill var(--transition);
+}
+
+.services__item-navigation-button:hover svg path {
+  fill: var(--white-color);
+}
+
+.services__item-navigation-button--next svg {
+  transform: rotate(-90deg);
+}
+
+.services__item-navigation-button--prev svg {
+  transform: rotate(90deg);
 }
 
 .services__item-name {

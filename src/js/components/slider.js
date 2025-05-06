@@ -1,13 +1,38 @@
 import Swiper from 'swiper';
 import { Navigation, EffectFade, Pagination, Autoplay, Scrollbar } from 'swiper/modules';
 
+export const useFilterServicesSlider = () => {
+  new Swiper('.services__filter', {
+    slidesPerView: 1.5,
+    spaceBetween: 20,
+    breakpoints: {
+      381: {
+        slidesPerView: 2.2,
+      },
+      769: {
+        slidesPerView: 3.2,
+      },
+      993: {
+        slidesPerView: 4.2,
+      },
+      1201: {
+        slidesPerView: 5,
+      },
+    },
+  });
+};
+
 export const useServicesSlider = () => {
   document.querySelectorAll('.services__item-slider').forEach((sliderElem) => {
     new Swiper(sliderElem, {
-      modules: [EffectFade, Pagination],
+      modules: [Navigation, EffectFade, Pagination],
       slidesPerView: 1,
       loop: true,
       effect: 'fade',
+      navigation: {
+        nextEl: '.services__item-navigation-button--next',
+        prevEl: '.services__item-navigation-button--prev',
+      },
       fadeEffect: {
         crossFade: true,
       },

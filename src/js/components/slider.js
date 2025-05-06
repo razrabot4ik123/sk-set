@@ -113,3 +113,23 @@ export const useGallerySlider = () => {
   window.addEventListener('resize', checkWidth);
   checkWidth();
 };
+
+export const useServiceItemPageSlider = () => {
+  new Swiper('.service-item-page__slider', {
+    modules: [Navigation, EffectFade, Pagination],
+    slidesPerView: 1,
+    loop: true,
+    effect: 'fade',
+    navigation: {
+      nextEl: '.service-item-page__item-button--next',
+      prevEl: '.service-item-page__item-button--prev',
+    },
+    fadeEffect: {
+      crossFade: true,
+    },
+    pagination: {
+      el: '.service-item-page__item-pagination',
+      dynamicBullets: true,
+    },
+  });
+};

@@ -31,7 +31,7 @@
 .modal__window {
   position: relative;
   border-radius: 14px;
-  padding: 30px 20px;
+  padding: 40px 20px 30px;
   background-color: var(--white-color);
 }
 
@@ -64,19 +64,13 @@
 
 .modal__close {
   position: absolute;
-  top: 5px;
+  top: 0;
   right: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 40px;
   height: 40px;
-}
-
-@media (max-width: 576px) {
-  .modal__close {
-    top: 0;
-  }
 }
 
 .modal__close::before,

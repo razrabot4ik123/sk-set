@@ -3,6 +3,7 @@
 
 /* components */
 @import './components/header';
+@import './components/service-item-page/service-item-page.css';
 @import './components/services';
 @import './components/contacts';
 @import './components/footer';

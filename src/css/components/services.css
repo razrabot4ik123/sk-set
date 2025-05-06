@@ -189,12 +189,8 @@
   fill: var(--white-color);
 }
 
-.services__item-navigation-button--next svg {
-  transform: rotate(-90deg);
-}
-
 .services__item-navigation-button--prev svg {
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 }
 
 .services__item-name {

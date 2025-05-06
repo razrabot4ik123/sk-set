@@ -61,3 +61,12 @@ export const useNextBtn = () => {
     btnNext.style.display = 'block';
   });
 };
+
+export const useNameServicePage = () => {
+  const newTitle = document.querySelector('.service-item-page__info-name');
+  const title = document.querySelector('.modal__window-title');
+  const input = document.querySelector('.form__input--textarea');
+
+  title.textContent = 'Забронируйте ' + newTitle.textContent;
+  input.value = newTitle.textContent;
+};

@@ -7,7 +7,8 @@ import 'fslightbox';
 // components
 import { useBurger } from './components/burger';
 import { useModal } from './components/modal';
-import { useNextBtn } from './components/modal';
+import { useNameServicePage } from './components/modal';
+import { useServiceItemPageSlider } from './components/slider';
 import { useCheckOpenStatus } from './components/workStatus';
 import { useOpenWorkStatus } from './components/workStatus';
 import { useFilterServices } from './components/filterService';
@@ -17,7 +18,8 @@ import { usePhone } from './components/phone';
 
 useBurger();
 useModal();
-useNextBtn();
+useNameServicePage();
+useServiceItemPageSlider();
 // useCheckOpenStatus();
 // useOpenWorkStatus();
 useFilterServices();

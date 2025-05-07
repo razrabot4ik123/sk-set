@@ -118,7 +118,7 @@ export const useGallerySlider = () => {
 export const useServiceItemPageSlider = () => {
   new Swiper('.service-item-page__slider', {
     modules: [Navigation, Pagination],
-    slidesPerView: 2.5,
+    slidesPerView: 1,
     spaceBetween: 20,
     centeredSlides: true,
     loop: true,
@@ -129,6 +129,17 @@ export const useServiceItemPageSlider = () => {
     pagination: {
       el: '.service-item-page__slider-pagination',
       dynamicBullets: true,
+    },
+    breakpoints: {
+      577: {
+        slidesPerView: 1.5,
+      },
+      769: {
+        slidesPerView: 2,
+      },
+      1201: {
+        slidesPerView: 2.5,
+      },
     },
   });
 };
